@@ -1,73 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Tomáše Kyncla – webové stránky a grafický design. Ukázky projektů, kontakty a sociální sítě.">
-    <meta name="keywords" content="portfolio, web, grafika, design, Tomáš Kyncl">
-    <meta name="author" content="Tomáš Kyncl">
-    <title>Portfolio – Tomáš Kyncl</title>
-    <!-- css -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Tomáš Kyncl</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes pulse-border {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 0.3; }
+    }
+    .animate-pulse-border { animation: pulse-border 2s infinite; }
+  </style>
+
 </head>
+
 <body class="bg-gray-950 text-gray-100">
+
 <div class="min-h-screen flex flex-col lg:flex-row gap-6 p-4 lg:p-8">
-  <aside class="w-full lg:w-80 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 rounded-2xl p-6 flex flex-col items-center text-center shadow-xl">
-    <div class="relative mb-4">
-      <img src="https://avatars.githubusercontent.com/u/146917938?v=4" alt="Tomáš Kyncl"
-           class="w-32 h-32 rounded-full border-4 border-indigo-500 relative z-10">
-      <span class="absolute top-0 left-0 w-full h-full rounded-full border-4 border-indigo-500 z-0 animate-pulse-border"></span>
-    </div>
-    <h1 class="text-2xl font-bold text-gray-100 mt-2">Tomáš Kyncl</h1>
-    <p class="text-gray-300 mb-6">Web & Grafika</p>
-    <button class="bg-indigo-600 hover:bg-indigo-700 w-full py-2 rounded-lg font-semibold mb-6 shadow transition">
-      Zobrazit projekty
-    </button>
+
+<!-- Sidebar -->
+<aside class="w-full lg:w-80 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 rounded-2xl p-6 flex flex-col items-center text-center shadow-xl">
+
+  <!-- Avatar -->
+  <div class="relative mb-4">
+    <img src="https://avatars.githubusercontent.com/u/146917938?v=4" alt="Tomáš Kyncl"
+         class="w-32 h-32 rounded-full border-4 border-indigo-500 relative z-10">
+    <span class="absolute top-0 left-0 w-full h-full rounded-full border-4 border-indigo-500 z-0 animate-pulse-border"></span>
+  </div>
+
+  <h1 class="text-2xl font-bold text-gray-100 mt-2">Tomáš Kyncl</h1>
+  <p class="text-gray-300 mb-6">Web & Grafika</p>
+
+  <button class="bg-indigo-600 hover:bg-indigo-700 w-full py-2 rounded-lg font-semibold mb-6 shadow transition">
+    Zobrazit projekty
+  </button>
+
+  <!-- Kontakty a sociální sítě -->
+  <div class="w-full h-auto space-y-6">
 
     <!-- Kontakty -->
     <section>
-    <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Kontakty</h3>
-    <div class="space-y-2 text-center lg:text-left">
+      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Kontakty</h3>
+      <div class="space-y-2 text-center lg:text-left">
         <a href="mailto:tomox.design@gmail.com" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="mail" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">tomox.design@gmail.com</span>
+          <i data-lucide="mail" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">tomox.design@gmail.com</span>
         </a>
         <a href="tel:+420720122877" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="phone" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">+420 720 122 877</span>
+          <i data-lucide="phone" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">+420 720 122 877</span>
         </a>
         <a href="#" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">Česká republika</span>
+          <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">Česká republika</span>
         </a>
-    </div>
+      </div>
     </section>
 
     <!-- Sociální sítě -->
     <section>
-    <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Sociální sítě</h3>
-    <div class="flex flex-wrap justify-center items-center gap-2 lg:flex-col lg:justify-start lg:items-start">
+      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Sociální sítě</h3>
+      <div class="flex flex-wrap justify-center items-center gap-2 lg:flex-col lg:justify-start lg:items-start">
         <a href="https://github.com/tomoxdesign" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="github" class="w-6 h-6 text-gray-300 group-hover:text-indigo-400 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-indigo-400 text-sm hidden lg:inline">tomoxdesign</span>
+          <i data-lucide="github" class="w-6 h-6 text-gray-300 group-hover:text-indigo-400 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-400 text-sm hidden lg:inline">tomoxdesign</span>
         </a>
         <a href="https://www.instagram.com/tomox_04/" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="instagram" class="w-6 h-6 text-gray-300 group-hover:text-pink-400 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-pink-400 text-sm hidden lg:inline">@tomox_04</span>
+          <i data-lucide="instagram" class="w-6 h-6 text-gray-300 group-hover:text-pink-400 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-pink-400 text-sm hidden lg:inline">@tomox_04</span>
         </a>
         <a href="https://www.facebook.com/tomas.kyncl.146/?locale=cs_CZ" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
-        <i data-lucide="facebook" class="w-6 h-6 text-gray-300 group-hover:text-blue-500 inline-block"></i>
-        <span class="ml-2 text-gray-300 group-hover:text-blue-500 text-sm hidden lg:inline">Tomáš Kyncl</span>
+          <i data-lucide="facebook" class="w-6 h-6 text-gray-300 group-hover:text-blue-500 inline-block"></i>
+          <span class="ml-2 text-gray-300 group-hover:text-blue-500 text-sm hidden lg:inline">Tomáš Kyncl</span>
         </a>
-    </div>
+      </div>
     </section>
 
-  </aside>
-</div>
-</body>
 
+  </div>
+</aside>
+
+
+  <!-- Main Content jako složka -->
+  <main class="flex-1 flex flex-col">
+
+    <!-- Záložky-složka -->
+    <div class="">
+      <div class="flex gap-2 z-10 justify-end">
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="about">
+          O mně
+        </button>
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="resume">
+          Životopis
+        </button>
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="portfolio">
+          Portfolio
+        </button>
+      </div>
+
+      <!-- Obsah box -->
+      <div class="bg-gray-900 rounded-b-2xl rounded-tl-2xl shadow-inner mt-[-2px] p-8 overflow-y-auto">
+        <!-- O mně -->
+        <section id="about" class="tab-content">
+          <h2 class="text-3xl font-bold mb-6">O mně</h2>
+          <p class="text-gray-500 italic mb-6">Obsah doplním později...</p>
+        </section>
+
+        <!-- Životopis -->
+        <section id="resume" class="tab-content hidden">
+          <h2 class="text-3xl font-bold mb-6">Životopis</h2>
+          <p class="text-gray-500 italic mb-6">Obsah životopisu doplním později...</p>
+          <h3 class="text-2xl font-semibold mb-4">Dovednosti</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="flex justify-between"><span>Web design</span><span>80%</span></p>
+              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-4/5 transition-all duration-500"></div>
+              </div>
+            </div>
+            <div>
+              <p class="flex justify-between"><span>Grafický design</span><span>70%</span></p>
+              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-3/4 transition-all duration-500"></div>
+              </div>
+            </div>
+            <div>
+              <p class="flex justify-between"><span>Branding</span><span>90%</span></p>
+              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[90%] transition-all duration-500"></div>
+              </div>
+            </div>
+            <div>
+              <p class="flex justify-between"><span>WordPress</span><span>50%</span></p>
+              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-1/2 transition-all duration-500"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="tab-content hidden">
+          <h2 class="text-3xl font-bold mb-6">Portfolio</h2>
+          <p class="text-gray-500 italic">Portfolio doplním později...</p>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+const tabLinks = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const tab = link.getAttribute('data-tab');
+    tabContents.forEach(c => c.classList.add('hidden'));
+    document.getElementById(tab).classList.remove('hidden');
+
+    tabLinks.forEach(l => l.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'scale-105'));
+    link.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'scale-105');
+  });
+});
+
+// defaultně první záložka
+document.querySelector('.tab-link').click();
+lucide.createIcons();
+</script>
+
+</body>
 </html>
