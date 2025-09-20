@@ -4,20 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Tomáš Kyncl</title>
+  <!-- css -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- icons lucide -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    @keyframes pulse-border {
-      0%, 100% { transform: scale(1); opacity: 0.7; }
-      50% { transform: scale(1.2); opacity: 0.3; }
-    }
-    .animate-pulse-border { animation: pulse-border 2s infinite; }
-  </style>
 
 </head>
 
@@ -171,37 +164,196 @@
           </div>
         </section>
 
-        <!-- Životopis -->
+        <!-- Životopis jako timeline -->
         <section id="resume" class="tab-content hidden">
-          <h2 class="text-3xl font-bold mb-6">Životopis</h2>
-          <p class="text-gray-500 italic mb-6">Obsah životopisu doplním později...</p>
-          <h3 class="text-2xl font-semibold mb-4">Dovednosti</h3>
-          <div class="space-y-4">
+          <h2 class="text-3xl font-bold mb-8">Životopis</h2>
+          <!-- Vzdělání -->
+          <div class="flex items-center mb-6">
+            <i data-lucide="book-open" class="w-6 h-6 text-indigo-400 mr-2"></i>
+            <h3 class="text-2xl font-semibold text-indigo-400">Vzdělání</h3>
+          </div>
+          <div class="relative ml-6 space-y-10">
+            <div class="absolute left-2 top-0 h-full w-0.5 bg-indigo-500"></div>
+            <!-- Střední škola -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">Obchodní akademie a střední škola polytechnická Veselí nad Moravou</h4>
+              <p class="text-gray-400 mb-1">(2016 – 2020)</p>
+              <p class="text-gray-400">
+                Maturita, ekonomika, obchod, účtování.<br>
+                Předtím 2014–2016: Obor Informační technologie – základy IT a digitální tvorby.
+              </p>
+            </div>
+            <!-- ZŠ Hutník -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">Základní škola Veselí nad Moravou, Hutník 1456, okres Hodonín, příspěvková organizace</h4>
+              <p class="text-gray-400 mb-1">(2006 – 2014)</p>
+              <p class="text-gray-400">Základní vzdělání, rozvoj všeobecných znalostí a dovedností.</p>
+            </div>
+          </div>
+          <!-- Práce -->
+          <div class="flex items-center mt-12 mb-6">
+            <i data-lucide="briefcase" class="w-6 h-6 text-indigo-400 mr-2"></i>
+            <h3 class="text-2xl font-semibold text-indigo-400">Pracovní zkušenosti</h3>
+          </div>
+          <div class="relative ml-6 space-y-10">
+            <div class="absolute left-2 top-0 h-full w-0.5 bg-indigo-500"></div>
+            <!-- OSVČ -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">OSVČ – Vývojář webových aplikací a IT specialista</h4>
+              <p class="text-gray-400 mb-1">(Od 2023 – současnost)</p>
+              <p class="text-gray-400">
+                Poskytuji <strong>IT podporu</strong>, <strong>technickou podporu</strong>, <strong>testuji webové aplikace</strong> a programuji vlastní webové aplikace.
+              </p>
+            </div>
+            <!-- Kaufland -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">Kaufland Česká republika v.o.s.</h4>
+              <p class="text-gray-400 mb-1">(11/2020 – 11/2022)</p>
+              <p class="text-gray-400">Asistent prodeje – práce ve skladu, příjem zboží a vybalování na prodejně.</p>
+            </div>
+            <!-- Praxe -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">Praxe během studia – Česká pojišťovna Hodonín</h4>
+              <p class="text-gray-400 mb-1">(2020)</p>
+              <p class="text-gray-400 mb-1">  Automatizace získávání kontaktů z veřejných registrů, příprava podkladů pro obchodní aktivity, administrativa.</p>
+            </div>
+            <!-- Prosperity -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">Prosperity Financial Services</h4>
+              <p class="text-gray-400 mb-1">(12/2019 – 11/2020)</p>
+              <p class="text-gray-400">OSVČ – finanční poradce, spolupráce na projektech a krátkodobé úkoly.</p>
+            </div>
+            <!-- Eurotec -->
+            <div class="relative pl-8">
+              <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <h4 class="text-xl font-semibold text-gray-200">EUROTEC, k.s.</h4>
+              <p class="text-gray-400 mb-1">(2015 – 2017)</p>
+              <p class="text-gray-400">Dělník ve výrobě během 9. třídy a prvních ročníků střední školy.</p>
+            </div>
+          </div>
+
+        <!-- Ovládám -->
+        <div class="mt-12">
+          <div class="flex items-center mb-4">
+            <i data-lucide="cpu" class="w-6 h-6 text-indigo-400 mr-2"></i>
+            <h3 class="text-2xl font-semibold text-indigo-400">Ovládám</h3>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 space-y-5">
+            <!-- Grafické programy -->
             <div>
-              <p class="flex justify-between"><span>Web design</span><span>80%</span></p>
-              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
-                <div class="bg-indigo-500 h-2 rounded-full w-4/5 transition-all duration-500"></div>
+              <h4 class="text-indigo-300 font-semibold mb-2">Grafické programy</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">CorelDRAW</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity Designer</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity Photo</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">GIMP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Inkscape</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Figma</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Canva</span>
               </div>
             </div>
+
+            <!-- Programování -->
             <div>
-              <p class="flex justify-between"><span>Grafický design</span><span>70%</span></p>
-              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
-                <div class="bg-indigo-500 h-2 rounded-full w-3/4 transition-all duration-500"></div>
+              <h4 class="text-indigo-300 font-semibold mb-2">Programování</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">HTML</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">CSS</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">JavaScript</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">PHP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Python</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">OOP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MySQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MSSQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SQLite</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">PostgreSQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Node.js</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Node-RED</span>
               </div>
             </div>
+
+            <!-- Frameworky -->
             <div>
-              <p class="flex justify-between"><span>Branding</span><span>90%</span></p>
-              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
-                <div class="bg-indigo-500 h-2 rounded-full w-[90%] transition-all duration-500"></div>
+              <h4 class="text-indigo-300 font-semibold mb-2">Frameworky</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Nette Framework</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Flask</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Django</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Tkinter</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">WordPress</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Bootstrap</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">TailwindCSS</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Git/GitHub</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MS Office</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">LibreOffice</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity programy</span>
               </div>
             </div>
+
+            <!-- Softskills -->
             <div>
-              <p class="flex justify-between"><span>WordPress</span><span>50%</span></p>
-              <div class="w-full bg-gray-800 rounded-full h-2 mt-1">
-                <div class="bg-indigo-500 h-2 rounded-full w-1/2 transition-all duration-500"></div>
+              <h4 class="text-indigo-300 font-semibold mb-2">Softskills</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Dobrá organizace času</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce v týmu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Analytické myšlení</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Psaná komunikace</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Empatie</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Schopnost spolupracovat v týmu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Flexibilita a adaptabilita</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Sebevědomí</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Zodpovědnost</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Učení se novým věcem</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Time management</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Multitasking</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Schopnost dávat a přijímat zpětnou vazbu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Tvorba prezentací</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SEO základy</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">E-mail marketing</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Psaní všemi deseti</span>
+              </div>
+            </div>
+
+            <!-- Správa IT -->
+            <div>
+              <h4 class="text-indigo-300 font-semibold mb-2">Správa IT</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Správa serverů / hosting (Linux / Windows)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">XAMPP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Nginx</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Síťování (LAN/WAN)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Zálohování / Recovery</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Virtualizace (VirtualBox, VMware, Docker)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Automatizace úloh (cron, skripty)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce s RaspberryPi / OrangePi</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce s tiskárnami</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Monitoring služeb / logování</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Bezpečnostní základy (firewally, oprávnění)</span>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Jazyky -->
+        <div class="mt-12">
+          <div class="flex items-center mb-4">
+            <i data-lucide="globe" class="w-6 h-6 text-indigo-400 mr-2"></i>
+            <h3 class="text-2xl font-semibold text-indigo-400">Jazyky</h3>
+          </div>
+          <div class="flex flex-wrap gap-3 text-gray-300">
+            <span class="bg-gray-800 px-3 py-1 rounded-full">Čeština – rodilý mluvčí</span>
+            <span class="bg-gray-800 px-3 py-1 rounded-full">Angličtina – pokročilá (maturita)</span>
+            <span class="bg-gray-800 px-3 py-1 rounded-full">Němčina – základní / 4 roky na střední</span>
+          </div>
+        </div>
         </section>
 
         <!-- Portfolio -->
