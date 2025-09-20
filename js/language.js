@@ -17,13 +17,16 @@ function setLang(lang) {
       dict = lang_cs;
   }
 
-  // projdi všechny prvky s data-key
-  document.querySelectorAll("[data-key]").forEach(el => {
+document.querySelectorAll("[data-key]").forEach(el => {
+  // pokud nemá potomky s data-key, přelož
+  if (!el.querySelector("[data-key]")) {
     const key = el.getAttribute("data-key");
     if (dict[key]) {
-      el.textContent = dict[key];
+      el.innerHTML = dict[key];
     }
-  });
+  }
+});
+
 }
 
 // spustíme při načtení stránky

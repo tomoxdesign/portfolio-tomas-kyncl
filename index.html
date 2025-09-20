@@ -28,12 +28,12 @@
     <span class="absolute top-0 left-0 w-full h-full rounded-full border-4 border-indigo-500 z-0 animate-pulse-border"></span>
   </div>
 
-  <h1 class="text-2xl font-bold text-gray-100 mt-2">Tomáš Kyncl</h1>
-  <p class="text-gray-300 mb-6">Web & Grafika</p>
+  <h1 class="text-2xl font-bold text-gray-100 mt-2" data-key="full_name">Tomáš Kyncl</h1>
+  <p class="text-gray-300 mb-6" data-key="sidebar_proffesion">Webový vývojář</p>
 
   <div class="flex items-center gap-2 mb-6">
     <!-- Sidebar tlačítko -->
-    <button id="sidebar-portfolio" class="bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-lg font-semibold shadow transition" data-tab="portfolio">
+    <button id="sidebar-portfolio" class="bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-lg font-semibold shadow transition" data-tab="portfolio" data-key="show_projects">
       Zobrazit projekty
     </button>
 
@@ -49,38 +49,38 @@
 
     <!-- Kontakty -->
     <section>
-      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Kontakty</h3>
+      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left" data-key="contacts">Kontakty</h3>
       <div class="space-y-2 text-center lg:text-left">
         <a href="mailto:tomox.design@gmail.com" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="mail" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">tomox.design@gmail.com</span>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm" data-key="email_address">tomox.design@gmail.com</span>
         </a>
         <a href="tel:+420720122877" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="phone" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">+420 720 122 877</span>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm" data-key="phone_number">+420 720 122 877</span>
         </a>
         <a href="#" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400 group-hover:text-indigo-300 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm">Česká republika</span>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-300 text-sm" data-key="state">Česká republika</span>
         </a>
       </div>
     </section>
 
     <!-- Sociální sítě -->
     <section>
-      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left">Sociální sítě</h3>
+      <h3 class="mb-2 text-gray-400 font-semibold text-sm text-center lg:text-left" data-key="social_sites">Sociální sítě</h3>
       <div class="flex flex-wrap justify-center items-center gap-2 lg:flex-col lg:justify-start lg:items-start">
         <a href="https://github.com/tomoxdesign" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="github" class="w-6 h-6 text-gray-300 group-hover:text-indigo-400 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-indigo-400 text-sm hidden lg:inline">tomoxdesign</span>
+          <span class="ml-2 text-gray-300 group-hover:text-indigo-400 text-sm hidden lg:inline" data-key="github_name">tomoxdesign</span>
         </a>
         <a href="https://www.instagram.com/tomox_04/" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="instagram" class="w-6 h-6 text-gray-300 group-hover:text-pink-400 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-pink-400 text-sm hidden lg:inline">@tomox_04</span>
+          <span class="ml-2 text-gray-300 group-hover:text-pink-400 text-sm hidden lg:inline" data-key="instagram_name">@tomox_04</span>
         </a>
         <a href="https://www.facebook.com/tomas.kyncl.146/?locale=cs_CZ" class="group block px-3 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
           <i data-lucide="facebook" class="w-6 h-6 text-gray-300 group-hover:text-blue-500 inline-block"></i>
-          <span class="ml-2 text-gray-300 group-hover:text-blue-500 text-sm hidden lg:inline">Tomáš Kyncl</span>
+          <span class="ml-2 text-gray-300 group-hover:text-blue-500 text-sm hidden lg:inline" data-key="facebook_name">Tomáš Kyncl</span>
         </a>
       </div>
     </section>
@@ -96,13 +96,13 @@
     <!-- Záložky-složka -->
     <div class="">
       <div class="flex gap-2 z-10 justify-end">
-        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="about">
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="about" data-key="about_me">
           O mně
         </button>
-        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="resume">
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="resume" data-key="cw">
           Životopis
         </button>
-        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="portfolio">
+        <button class="tab-link px-4 py-2 bg-gray-800 text-gray-300 rounded-t-lg shadow-md hover:bg-indigo-600 hover:text-white transition transform hover:-translate-y-1" data-tab="portfolio" data-key="portfolio">
           Portfolio
         </button>
       </div>
@@ -112,12 +112,12 @@
         
         <!-- O mně -->
         <section id="about" class="tab-content">
-          <h2 class="text-3xl font-bold mb-6">O mně</h2>
+          <h2 class="text-3xl font-bold mb-6" data-key="about_me">O mně</h2>
 
           <!-- Kdo jsem -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Kdo jsem?</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="who_am_i">Kdo jsem?</h3>
+            <p class="text-gray-400" data-key="who_am_i_answer">
               Jmenuji se <strong>Tomáš Kyncl</strong> a už od střední školy mě fascinovalo, jak se staví digitální projekty. Začínal jsem na oboru <strong>Informační technologie</strong>, ale maturitu jsem dokončil na <strong>Obchodní akademii</strong>, kde jsem získal i ekonomický pohled na věc – a jsem za tuto zkušenost vděčný, protože mi ukázala, že učení nikdy nekončí.  
               Tvorbu webů a programování jsem se učil převážně <strong>jako samouk</strong> – zkoušel, testoval a občas i ztroskotal. V roce <strong>2023</strong> jsem si své znalosti rozšířil kurzem <strong>Tvorby webových aplikací v jazyce Python</strong>.
             </p>
@@ -125,46 +125,48 @@
 
           <!-- Proč dělám, co dělám -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Proč dělám, co dělám?</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="why_i_do_what_i_do">Proč dělám, co dělám?</h3>
+            <p class="text-gray-400" data-key="why_i_do_what_i_do_answer">
               Protože mě baví <strong>spojovat kreativitu s technologií</strong>. Každý projekt je pro mě malý příběh, kde design a funkčnost spolupracují, aby vzniklo něco, co nejen funguje, ale i baví oči a přináší emoce.
             </p>
           </div>
 
           <!-- Co mě vystihuje -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Co mě vystihuje?</h3>
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="what_describes_me">Co mě vystihuje?</h3>
             <ul class="text-gray-400 list-disc list-inside space-y-1">
-              <li><strong>Kreativita</strong> – píšu satirické i lyrické básně, které baví mě i mé přátele.</li>
-              <li><strong>Zvědavost</strong> – zkoumám, jak věci fungují, a nebojím se ptát „proč“.</li>
-              <li><strong>Upřímnost</strong> – říkám věci na rovinu, ať už v práci nebo v životě.</li>
-              <li><strong>Odvaha učit se nové věci</strong> – každý den je příležitost posunout se dál.</li>
+              <li data-key="what_describes_me_answer1"><strong>Kreativita</strong> – píšu satirické i lyrické básně, které baví mě i mé přátele.</li>
+              <li data-key="what_describes_me_answer2"><strong>Zvědavost</strong> – zkoumám, jak věci fungují, a nebojím se ptát „proč“.</li>
+              <li data-key="what_describes_me_answer3"><strong>Upřímnost</strong> – říkám věci na rovinu, ať už v práci nebo v životě.</li>
+              <li data-key="what_describes_me_answer4"><strong>Odvaha učit se nové věci</strong> – každý den je příležitost posunout se dál.</li>
             </ul>
           </div>
 
           <!-- Jak trávím volný čas -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Jak trávím volný čas?</h3>
-            <p class="text-gray-400">
-              Rád vyrážím <strong>na kole do přírody</strong>, občas dávám prostor <strong>agresivnímu bruslení</strong>, hraju <strong>fotbal</strong> nebo si užívám <strong>videohry</strong> – hlavně ty kooperativní, kde člověk táhne za jeden provaz. Jsem také velký fanoušek <strong>anime</strong>, protože miluju světy, kde fantazie nemá hranice.  
-              A když nechci být sám, trávím čas s přítelkyní – u <strong>dobré komedie</strong>, při <strong>kooperativních hrách</strong> nebo jen tak, když spolu řešíme svět.
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="what_i_do_in_free_time">Jak trávím volný čas?</h3>
+            <p class="text-gray-400" data-key="what_i_do_in_free_time_answer">
+              Rád vyrážím <strong>na kole do přírody</strong>, občas dávám prostor <strong>agresivnímu bruslení</strong>, hraju <strong>fotbal</strong> nebo si užívám <strong>videohry</strong> – hlavně ty kooperativní, kde člověk táhne za jeden provaz. Jsem také velký fanoušek <strong>anime</strong>, protože miluju světy, kde fantazie nemá hranice. A když nechci být sám, trávím čas s přítelkyní – u <strong>dobré komedie</strong>, při <strong>kooperativních hrách</strong> nebo jen tak, když spolu řešíme svět.
             </p>
           </div>
 
           <!-- Oblíbený citát -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Oblíbený citát</h3>
-            <blockquote class="text-gray-400 italic border-l-4 border-indigo-500 pl-4">
-              „Neexistuje problém bez řešení, otázkou je jen, zda stojí za to mu věnovat čas.“  
-              <span class="text-gray-500 text-sm block mt-1">– Tomáš Kyncl</span>
-            </blockquote>
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="favorite_quote">Oblíbený citát</h3>
+            
+            <div class="text-gray-400 italic border-l-4 border-indigo-500 pl-4">
+              <blockquote data-key="favorite_quote_answer">
+                „Neexistuje problém bez řešení, otázkou je jen, zda stojí za to mu věnovat čas.“  
+              </blockquote>
+              <span class="text-gray-500 text-sm block mt-1" data-key="full_name">Tomáš Kyncl</span>
+            </div>
           </div>
 
 
           <!-- Osobnější verze Co mě pohání -->
           <div class="mb-6">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-2">Co mě pohání?</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-2" data-key="what_motivate_me">Co mě pohání?</h3>
+            <p class="text-gray-400" data-key="what_motivate_me_answer">
               Nejvíc mě naplňuje <strong>tvořit a objevovat nové věci</strong>. Ať už je to web, grafika, nový projekt nebo jen malý experiment, chci, aby moje práce byla <strong>smysluplná a autentická</strong>.  
               Rád vytvářím věci, které <strong>šetří čas a automatizují rutinu</strong> – přece jen, co jde zautomatizovat, nemá cenu dělat osobně.  
               Chci inspirovat lidi tím, co vytvářím, a zároveň se učit každý den něco nového – protože život je příliš krátký na to, aby člověk stál na místě.  
@@ -175,74 +177,74 @@
 
         <!-- Životopis jako timeline -->
         <section id="resume" class="tab-content hidden">
-          <h2 class="text-3xl font-bold mb-8">Životopis</h2>
+          <h2 class="text-3xl font-bold mb-8" data-key="cw">Životopis</h2>
           <!-- Vzdělání -->
           <div class="flex items-center mb-6">
             <i data-lucide="book-open" class="w-6 h-6 text-indigo-400 mr-2"></i>
-            <h3 class="text-2xl font-semibold text-indigo-400">Vzdělání</h3>
+            <h3 class="text-2xl font-semibold text-indigo-400" data-key="study">Vzdělání</h3>
           </div>
           <div class="relative ml-6 space-y-10">
             <div class="absolute left-2 top-0 h-full w-0.5 bg-indigo-500"></div>
             <!-- Střední škola -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">Obchodní akademie a střední škola polytechnická Veselí nad Moravou</h4>
-              <p class="text-gray-400 mb-1">(2016 – 2020)</p>
-              <p class="text-gray-400">
-                Maturitní obor "Obchodní akademie"<br>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="study1_school">Obchodní akademie a střední škola polytechnická Veselí nad Moravou</h4>
+              <p class="text-gray-400 mb-1" data-key="study1_date">(2016 – 2020)</p>
+              <p class="text-gray-400" data-key="study1_description">
+                Maturitní obor "Obchodní akademie"
               </p>
             </div>
             <!-- ZŠ Hutník -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">Základní škola Veselí nad Moravou, Hutník 1456, okres Hodonín, příspěvková organizace</h4>
-              <p class="text-gray-400 mb-1">(2006 – 2014)</p>
-              <p class="text-gray-400">Základní vzdělání, rozvoj všeobecných znalostí a dovedností.</p>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="study2_school">Základní škola Veselí nad Moravou, Hutník 1456, okres Hodonín, příspěvková organizace</h4>
+              <p class="text-gray-400 mb-1" data-key="study2_date">(2006 – 2014)</p>
+              <p class="text-gray-400" data-key="study2_description">Základní vzdělání, rozvoj všeobecných znalostí a dovedností.</p>
             </div>
           </div>
           <!-- Práce -->
           <div class="flex items-center mt-12 mb-6">
             <i data-lucide="briefcase" class="w-6 h-6 text-indigo-400 mr-2"></i>
-            <h3 class="text-2xl font-semibold text-indigo-400">Pracovní zkušenosti</h3>
+            <h3 class="text-2xl font-semibold text-indigo-400" data-key="work_experience">Pracovní zkušenosti</h3>
           </div>
           <div class="relative ml-6 space-y-10">
             <div class="absolute left-2 top-0 h-full w-0.5 bg-indigo-500"></div>
             <!-- OSVČ -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">OSVČ – Vývojář webových aplikací a IT specialista</h4>
-              <p class="text-gray-400 mb-1">(Od 2023 – současnost)</p>
-              <p class="text-gray-400">
+              <h4 class="text-xl font-semibold text-gray-200" data-key="work1_text">OSVČ – Vývojář webových aplikací a IT specialista</h4>
+              <p class="text-gray-400 mb-1" data-key="work1_date">(Od 2023 – současnost)</p>
+              <p class="text-gray-400" data-key="work1_decs">
                 Poskytuji <strong>IT podporu</strong>, <strong>technickou podporu</strong>, <strong>testuji webové aplikace</strong> a programuji vlastní webové aplikace.
               </p>
             </div>
             <!-- Kaufland -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">Kaufland Česká republika v.o.s.</h4>
-              <p class="text-gray-400 mb-1">(11/2020 – 11/2022)</p>
-              <p class="text-gray-400">Asistent prodeje – práce ve skladu, příjem zboží a vybalování na prodejně.</p>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="work2_text">Kaufland Česká republika v.o.s.</h4>
+              <p class="text-gray-400 mb-1" data-key="work2_date">(11/2020 – 11/2022)</p>
+              <p class="text-gray-400" data-key="work2_desc">Asistent prodeje – práce ve skladu, příjem zboží a vybalování na prodejně.</p>
             </div>
             <!-- Praxe -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">Praxe během studia – Česká pojišťovna Hodonín</h4>
-              <p class="text-gray-400 mb-1">(2020)</p>
-              <p class="text-gray-400 mb-1">  Automatizace získávání kontaktů z veřejných registrů, příprava podkladů pro obchodní aktivity, administrativa.</p>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="work3_text">Praxe během studia – Česká pojišťovna Hodonín</h4>
+              <p class="text-gray-400 mb-1" data-key="work3_date">(2020)</p>
+              <p class="text-gray-400 mb-1" data-key="work3_desc">  Automatizace získávání kontaktů z veřejných registrů, příprava podkladů pro obchodní aktivity, administrativa.</p>
             </div>
             <!-- Prosperity -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">Prosperity Financial Services</h4>
-              <p class="text-gray-400 mb-1">(12/2019 – 11/2020)</p>
-              <p class="text-gray-400">OSVČ – finanční poradce, spolupráce na projektech a krátkodobé úkoly.</p>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="work4_text">Prosperity Financial Services</h4>
+              <p class="text-gray-400 mb-1" data-key="work4_date">(12/2019 – 11/2020)</p>
+              <p class="text-gray-400" data-key="work4_desc">OSVČ – finanční poradce, spolupráce na projektech a krátkodobé úkoly.</p>
             </div>
             <!-- Eurotec -->
             <div class="relative pl-8">
               <div class="absolute left-0 top-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
-              <h4 class="text-xl font-semibold text-gray-200">EUROTEC, k.s.</h4>
-              <p class="text-gray-400 mb-1">(2015 – 2017)</p>
-              <p class="text-gray-400">Dělník ve výrobě během 9. třídy a prvních ročníků střední školy.</p>
+              <h4 class="text-xl font-semibold text-gray-200" data-key="work5_text">EUROTEC, k.s.</h4>
+              <p class="text-gray-400 mb-1" data-key="work5_date">(2015 – 2017)</p>
+              <p class="text-gray-400" data-key="work5_desc">Dělník ve výrobě během 9. třídy a prvních ročníků střední školy.</p>
             </div>
           </div>
 
@@ -250,101 +252,101 @@
         <div class="mt-12">
           <div class="flex items-center mb-4">
             <i data-lucide="cpu" class="w-6 h-6 text-indigo-400 mr-2"></i>
-            <h3 class="text-2xl font-semibold text-indigo-400">Ovládám</h3>
+            <h3 class="text-2xl font-semibold text-indigo-400" data-key="skills_title">Ovládám</h3>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 space-y-5">
             <!-- Grafické programy -->
             <div>
-              <h4 class="text-indigo-300 font-semibold mb-2">Grafické programy</h4>
+              <h4 class="text-indigo-300 font-semibold mb-2" data-key="skill_graphics_title">Grafické programy</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">CorelDRAW</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity Designer</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity Photo</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">GIMP</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Inkscape</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Figma</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Canva</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_1">CorelDRAW</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_2">Affinity Designer</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_3">Affinity Photo</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_4">GIMP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_5">Inkscape</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_6">Figma</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_graphics_7">Canva</span>
               </div>
             </div>
 
             <!-- Programování -->
             <div>
-              <h4 class="text-indigo-300 font-semibold mb-2">Programování</h4>
+              <h4 class="text-indigo-300 font-semibold mb-2" data-key="skill_programming_title">Programování</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">HTML</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">CSS</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">JavaScript</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">PHP</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Python</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">OOP</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SQL</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MySQL</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MSSQL</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SQLite</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">PostgreSQL</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Node.js</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Node-RED</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_1">HTML</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_2">CSS</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_3">JavaScript</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_4">PHP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_5">Python</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_6">OOP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_7">SQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_8">MySQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_9">MSSQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_10">SQLite</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_11">PostgreSQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_12">Node.js</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_programming_13">Node-RED</span>
               </div>
             </div>
 
             <!-- Frameworky -->
             <div>
-              <h4 class="text-indigo-300 font-semibold mb-2">Frameworky</h4>
+              <h4 class="text-indigo-300 font-semibold mb-2" data-key="skill_frameworks_title">Frameworky</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Nette Framework</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Flask</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Django</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Tkinter</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">WordPress</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Bootstrap</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">TailwindCSS</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Git/GitHub</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">MS Office</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">LibreOffice</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Affinity programy</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_1">Nette Framework</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_2">Flask</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_3">Django</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_4">Tkinter</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_5">WordPress</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_6">Bootstrap</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_7">TailwindCSS</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_8">Git/GitHub</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_9">MS Office</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_10">LibreOffice</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_frameworks_11">Affinity</span>
               </div>
             </div>
 
             <!-- Softskills -->
             <div>
-              <h4 class="text-indigo-300 font-semibold mb-2">Softskills</h4>
+              <h4 class="text-indigo-300 font-semibold mb-2" data-key="skill_soft_title">Softskills</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Dobrá organizace času</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce v týmu</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Analytické myšlení</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Psaná komunikace</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Empatie</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Schopnost spolupracovat v týmu</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Flexibilita a adaptabilita</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Sebevědomí</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Zodpovědnost</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Učení se novým věcem</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Time management</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Multitasking</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Schopnost dávat a přijímat zpětnou vazbu</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Tvorba prezentací</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">SEO základy</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">E-mail marketing</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Psaní všemi deseti</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_1">Dobrá organizace času</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_2">Práce v týmu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_3">Analytické myšlení</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_4">Psaná komunikace</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_5">Empatie</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_6">Schopnost spolupracovat v týmu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_7">Flexibilita a adaptabilita</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_8">Sebevědomí</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_9">Zodpovědnost</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_10">Učení se novým věcem</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_11">Time management</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_12">Multitasking</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_13">Schopnost dávat a přijímat zpětnou vazbu</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_14">Tvorba prezentací</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_15">SEO základy</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_16">E-mail marketing</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_soft_17">Psaní všemi deseti</span>
               </div>
             </div>
 
             <!-- Správa IT -->
             <div>
-              <h4 class="text-indigo-300 font-semibold mb-2">Správa IT</h4>
+              <h4 class="text-indigo-300 font-semibold mb-2" data-key="skill_it_title">Správa IT</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Správa serverů / hosting (Linux / Windows)</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">XAMPP</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Nginx</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Síťování (LAN/WAN)</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Zálohování / Recovery</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Virtualizace (VirtualBox, VMware, Docker)</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Automatizace úloh (cron, skripty)</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce s RaspberryPi / OrangePi</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Práce s tiskárnami</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Monitoring služeb / logování</span>
-                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200">Bezpečnostní základy (firewally, oprávnění)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_1">Správa serverů / hosting (Linux / Windows)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_2">XAMPP</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_3">Nginx</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_4">Síťování (LAN/WAN)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_5">Zálohování / Recovery</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_6">Virtualizace (VirtualBox, VMware, Docker)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_7">Automatizace úloh (cron, skripty)</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_8">Práce s RaspberryPi / OrangePi</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_9">Práce s tiskárnami</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_10">Monitoring služeb / logování</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-gray-200" data-key="skill_it_11">Bezpečnostní základy (firewally, oprávnění)</span>
               </div>
             </div>
           </div>
@@ -354,21 +356,20 @@
         <div class="mt-12">
           <div class="flex items-center mb-4">
             <i data-lucide="globe" class="w-6 h-6 text-indigo-400 mr-2"></i>
-            <h3 class="text-2xl font-semibold text-indigo-400">Jazyky</h3>
+            <h3 class="text-2xl font-semibold text-indigo-400" data-key="languages_title">Jazyky</h3>
           </div>
           <div class="flex flex-wrap gap-3 text-gray-300">
-            <span class="bg-gray-800 px-3 py-1 rounded-full">Čeština – rodilý mluvčí</span>
-            <span class="bg-gray-800 px-3 py-1 rounded-full">Angličtina – pokročilá (maturita)</span>
-            <span class="bg-gray-800 px-3 py-1 rounded-full">Němčina – základní / 4 roky na střední</span>
+            <span class="bg-gray-800 px-3 py-1 rounded-full" data-key="language_1">Čeština – rodilý mluvčí</span>
+            <span class="bg-gray-800 px-3 py-1 rounded-full" data-key="language_2">Angličtina – pokročilá (maturita)</span>
+            <span class="bg-gray-800 px-3 py-1 rounded-full" data-key="language_3">Němčina – základní / 4 roky na střední</span>
           </div>
         </div>
-        </section>
 
-        <!-- Portfolio -->
-        <section id="portfolio" class="tab-content hidden">
-          <h2 class="text-3xl font-bold mb-6">Portfolio</h2>
-          <p class="text-gray-500 italic">Portfolio doplním později...</p>
-        </section>
+      <!-- Portfolio sekce -->
+      <section id="portfolio" class="tab-content hidden">
+        <h2 class="text-3xl font-bold mb-6" data-key="portfolio">Portfolio</h2>
+        <p class="text-gray-500 italic" data-key="portfolio_text">Portfolio doplním později...</p>
+      </section>
       </div>
     </div>
 
