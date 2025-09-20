@@ -1,5 +1,6 @@
 const tabLinks = document.querySelectorAll('.tab-link');
 const tabContents = document.querySelectorAll('.tab-content');
+const sidebar = document.querySelector('aside');
 
 tabLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -7,21 +8,21 @@ tabLinks.forEach(link => {
 
     tabContents.forEach(c => {
       c.classList.add('hidden');
-      c.classList.remove('fancy-fade-in'); // odstraníme starou animaci
+      c.classList.remove('fancy-fade-in');
     });
 
     const activeTab = document.getElementById(tab);
     activeTab.classList.remove('hidden');
-
-    // přidáme fancy animaci
-    void activeTab.offsetWidth; // force reflow, aby animace fungovala znovu
+    void activeTab.offsetWidth;
     activeTab.classList.add('fancy-fade-in');
+
+    void sidebar.offsetWidth;
+    sidebar.classList.add('fancy-fade-in');
 
     tabLinks.forEach(l => l.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'scale-105'));
     link.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'scale-105');
   });
 });
 
-// defaultně první záložka
 document.querySelector('.tab-link').click();
 lucide.createIcons();
