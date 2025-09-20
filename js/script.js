@@ -26,3 +26,11 @@ tabLinks.forEach(link => {
 
 document.querySelector('.tab-link').click();
 lucide.createIcons();
+
+// Sidebar tlačítko aktivace karty
+const sidebarPortfolio = document.getElementById('sidebar-portfolio');
+sidebarPortfolio.addEventListener('click', () => {
+  const tabEvent = new Event('click');
+  document.querySelector('.tab-link[data-tab="portfolio"]').dispatchEvent(tabEvent);
+});
+
