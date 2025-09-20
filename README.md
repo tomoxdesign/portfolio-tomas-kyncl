@@ -1,7 +1,9 @@
-## 🌐 GitHub Pages
+## 🌐 Odkaz na projekt
 
 Moje portfolio je dostupné online:  
-[https://tomoxdesign.github.io/portfolio-tomas-kyncl/](https://tomoxdesign.github.io/portfolio-tomas-kyncl/)
 
+[![Náhled portfolia](./img/screenshot.png)](https://tomoxdesign.github.io/portfolio-tomas-kyncl/)
+
+Kliknutím na obrázek se otevře portfolio v novém okně.  
 
 > Autor: Tomáš Kyncl
