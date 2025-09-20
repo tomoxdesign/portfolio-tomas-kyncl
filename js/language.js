@@ -13,20 +13,22 @@ function setLang(lang) {
     case "en":
       dict = lang_en;
       break;
+    case "de":
+      dict = lang_de;
+      break;
     default:
       dict = lang_cs;
   }
 
-document.querySelectorAll("[data-key]").forEach(el => {
-  // pokud nemá potomky s data-key, přelož
-  if (!el.querySelector("[data-key]")) {
-    const key = el.getAttribute("data-key");
-    if (dict[key]) {
-      el.innerHTML = dict[key];
+  document.querySelectorAll("[data-key]").forEach((el) => {
+    // pokud nemá potomky s data-key, přelož
+    if (!el.querySelector("[data-key]")) {
+      const key = el.getAttribute("data-key");
+      if (dict[key]) {
+        el.innerHTML = dict[key];
+      }
     }
-  }
-});
-
+  });
 }
 
 // spustíme při načtení stránky
@@ -40,5 +42,5 @@ langSelect.value = localStorage.getItem("lang") || "cs";
 
 // Přepínání jazyka
 langSelect.addEventListener("change", () => {
-setLang(langSelect.value);
+  setLang(langSelect.value);
 });
