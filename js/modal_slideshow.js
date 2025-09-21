@@ -24,8 +24,8 @@ document.querySelectorAll(".project-card").forEach((card) => {
 
         preview.style.opacity = 1;
         preview.style.transform = "scale(1.05)";
-      }, 400);
-    }, 5000);
+      }, 200);
+    }, 3000);
   });
 
   card.addEventListener("mouseleave", () => {
