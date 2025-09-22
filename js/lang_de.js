@@ -21,6 +21,7 @@ const lang_de = {
   about_me: "Über mich",
   cw: "Lebenslauf",
   portfolio: "Portfolio",
+  certificates: "Certifikate",
   // ABOUTME - questions - answers
   who_am_i: "Wer bin ich?",
   who_am_i_answer:
@@ -164,7 +165,6 @@ const lang_de = {
   language_2: "Englisch – Fortgeschritten (Abschluss der High School)",
   language_3: "Deutsch – Grundkenntnisse / 4 Jahre in der High School",
 
-  // portfolio
-  portfolio: "Portfolio",
-  portfolio_text: "Portfolio wird später ergänzt...",
+  // CERTIFICATES
+  certificates_title: "Meine Certifikate",
 };

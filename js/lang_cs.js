@@ -21,6 +21,7 @@ const lang_cs = {
   about_me: "O mně",
   cw: "Životopis",
   portfolio: "Portfolio",
+  certificates: "Certifikáty",
   // ABOUTME - questions - answers
   who_am_i: "Kdo jsem?",
   who_am_i_answer:
@@ -165,7 +166,8 @@ const lang_cs = {
   language_2: "Angličtina – pokročilá (maturita)",
   language_3: "Němčina – základní / 4 roky na střední",
 
-  // portfolio
-  portfolio: "Portfolio",
-  portfolio_text: "Portfolio doplním později...",
+  // CERTIFICATES
+  certificates_title: "Moje certifikáty",
+
+
 };
