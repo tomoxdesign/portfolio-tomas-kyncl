@@ -491,10 +491,32 @@
 								<img id="modalImage" src="" class="w-full max-h-[70vh] object-contain rounded-xl shadow-2xl transition-opacity duration-700 opacity-0" />
 								<h3 id="modalTitle" class="text-3xl font-bold text-white mt-6"></h3>
 								<p id="modalDesc" class="text-gray-300 mt-4"></p>
-								<button onclick="prevSlide()" class="absolute left-0 top-1/2 -translate-y-1/2 text-white text-4xl px-4">&#10094;</button>
-								<button onclick="nextSlide()" class="absolute right-0 top-1/2 -translate-y-1/2 text-white text-4xl px-4">&#10095;</button>
+
+								<!-- technologie -->
+								<div id="modalTags" class="flex flex-wrap justify-center gap-2 mt-4"></div>
+
+								<!-- odkaz -->
+								<a id="modalLink" href="#" target="_blank" class="inline-block mt-4 text-indigo-400 hover:underline"></a>
+
+								<!-- šipky -->
+								<button
+									onclick="prevSlide()"
+									class="absolute left-4 top-1/2 -translate-y-1/2 bg-indigo-400 hover:bg-indigo-500 backdrop-blur-sm w-12 h-12 flex items-center justify-center rounded-full text-white shadow-lg transition"
+								>
+									<span class="sr-only">Předchozí</span>
+									&#10094;
+								</button>
+
+								<button
+									onclick="nextSlide()"
+									class="absolute right-4 top-1/2 -translate-y-1/2 bg-indigo-400 hover:bg-indigo-500 backdrop-blur-sm w-12 h-12 flex items-center justify-center rounded-full text-white shadow-lg transition"
+								>
+									<span class="sr-only">Další</span>
+									&#10095;
+								</button>
 							</div>
 						</div>
+
 						<!-- Certifikáty -->
 						<section id="certificates" class="tab-content hidden">
 							<h2 class="text-3xl font-bold mb-6" data-key="certificates_title">Moje certifikáty</h2>

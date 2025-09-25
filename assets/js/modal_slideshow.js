@@ -47,10 +47,35 @@ function openModal(projectElement) {
   modal.classList.remove("hidden");
   modal.classList.add("flex");
 
+  // title + desc
   document.getElementById("modalTitle").innerText =
     projectElement.querySelector("h3").innerText;
   document.getElementById("modalDesc").innerText =
     projectElement.querySelector("p").innerText;
+
+  // technologie
+  const modalTags = document.getElementById("modalTags");
+  modalTags.innerHTML = "";
+  projectElement
+    .querySelectorAll(".absolute.top-3.left-3 span")
+    .forEach((span) => {
+      const tag = document.createElement("span");
+      tag.className =
+        "bg-gray-800/70 text-white text-xs px-2 py-1 rounded-full";
+      tag.textContent = span.textContent;
+      modalTags.appendChild(tag);
+    });
+
+  // odkaz (pokud existuje)
+  const modalLink = document.getElementById("modalLink");
+  const projectLink = projectElement.querySelector("a");
+  if (projectLink) {
+    modalLink.href = projectLink.href;
+    modalLink.textContent = projectLink.textContent;
+    modalLink.classList.remove("hidden");
+  } else {
+    modalLink.classList.add("hidden");
+  }
 
   showSlide();
 }
