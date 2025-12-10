@@ -67,8 +67,7 @@ const lang_cs = {
 
   work1_text: "OSVČ – Vývojář webových aplikací a IT specialista",
   work1_date: "(Od 2023 – současnost)",
-  work1_desc:
-    "Poskytuji <strong>IT podporu</strong>, <strong>technickou podporu</strong>, <strong>testuji webové aplikace</strong> a programuji vlastní webové aplikace.",
+  work1_desc: "Poskytuji <strong>IT podporu</strong>, <strong>technickou podporu</strong>, <strong>testuji webové aplikace</strong> a programuji vlastní webové aplikace.",
 
   work2_text: "Kaufland Česká republika v.o.s.",
   work2_date: "(11/2020 – 11/2022)",

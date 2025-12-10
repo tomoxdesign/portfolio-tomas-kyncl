@@ -66,8 +66,7 @@ const lang_de = {
 
   work1_text: "Freelancer – Webanwendungsentwickler und IT-Spezialist",
   work1_date: "(Seit 2023 – heute)",
-  work1_desc:
-    "Ich biete <strong>IT-Support</strong>, <strong>technische Unterstützung</strong>, <strong>Testen von Webanwendungen</strong> und entwickle eigene Webanwendungen.",
+  work1_desc:"Ich biete <strong>IT-Support</strong>, <strong>technische Unterstützung</strong>, <strong>Testen von Webanwendungen</strong> und entwickle eigene Webanwendungen.",
 
   work2_text: "Kaufland Tschechische Republik v.o.s.",
   work2_date: "(11/2020 – 11/2022)",
